@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+
+    int magic_number = 10;
+
+    int guess;
+
+    int guess_attempt = 3;
+
+    printf("Please enter a number from 1-10: ", &guess);
+
+    scanf("%d", &guess);
+
+    for(guess=0; guess<=3; guess++){
+
+        if(guess < magic_number)
+
+            printf("\nYour guess is smaller than the magic number. Guess again: ");
+            scanf("%d", &guess);
+
+
+        if(guess==magic_number)
+
+            printf("nCongratualtions you win!!!!!!");
+
+        else
+
+            printf("\nSorry,You failed");
+
+    }
+
+    return 0;
+}
